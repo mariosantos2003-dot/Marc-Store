@@ -1,17 +1,15 @@
-
-import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
-import "./index.css"
+import React from 'react';
+import Header from './components/Header/Header';
 import Logo from './components/Logo';
-import Header from './components/Header';
-export default function App() {
 
+function App() {
   return (
-    <main >
-
-     <Logo />
-    </main>
-    
+    <div className="relative w-full h-screen ">
+      <Header />
+      <Logo />
+      {/* Puedes agregar aquí secciones futuras debajo */}
+    </div>
   );
-
-  
 }
+
+export default App;
