@@ -4,7 +4,7 @@ import Logo from './components/Logo';
 
 function App() {
   return (
-    <div className="relative w-full h-screen ">
+    <div >
       <Header />
       <Logo />
       {/* Puedes agregar aquí secciones futuras debajo */}
