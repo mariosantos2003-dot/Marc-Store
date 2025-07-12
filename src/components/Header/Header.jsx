@@ -7,7 +7,7 @@ function Header() {
         <div className='header-content'>
             <div className='nav-section'>
                 <h2 className='nav-link'>Home</h2>
-                <h2 className='nav-link'>About</h2>
+                <h2 className='nav-link'>Collection</h2>
             </div>
             
             <div className='logo-section'>
@@ -16,7 +16,7 @@ function Header() {
             
             <div className='nav-section'>
                 <h2 className='nav-link'>Contact</h2>
-                <h2 className='nav-link'>Collection</h2>
+                <h2 className='nav-link'>About</h2>
             </div>
         </div>
     </div>
