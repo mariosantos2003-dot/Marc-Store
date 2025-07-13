@@ -24,7 +24,7 @@ export default function Logo3D() {
           position: "absolute",
           top: 0,
           left: 0,
-          zIndex: -10,
+          zIndex: 0,
           zoom: 1,
         }}
         camera={{ position: [0, 0, 5] }}
