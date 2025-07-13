@@ -38,6 +38,7 @@ function Collection() {
   }, []);
 
   return (
+  <div className="collection-container">
     <ul className="collection-list">
       {products.map((product) => (
         <li key={product.id} className="collection-item">
@@ -50,6 +51,7 @@ function Collection() {
         </li>
       ))}
     </ul>
+    </div>
   );
 }
 
