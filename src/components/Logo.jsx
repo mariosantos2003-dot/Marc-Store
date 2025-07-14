@@ -1,22 +1,39 @@
-import { Canvas, useLoader, useThree } from "@react-three/fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
-import { TextureLoader } from "three";
-import { Environment } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, useGLTF, Environment } from "@react-three/drei";
+import { Suspense } from "react";
+import Dither from "./Dither/Dither";
+import Header from "./Header/Header";
 
 function LogoModel() {
   const { scene } = useGLTF("/assets/Final-Logo.glb");
-  return <primitive object={scene} />;
-}
-
-function Background() {
-  const texture = useLoader(TextureLoader, "/assets/background.jpg");
-  const { scene } = useThree();
-  scene.background = texture;
+  return <primitive object={scene} scale={[1, 1, 1]} />;
 }
 
 export default function Logo3D() {
   return (
-    <>
+    <div style={{ position: "relative", width: "100%", height: "100&",backgroundColor: "#000" }}>
+      <Header />
+      {/* Dither como fondo */}
+      <div style={{ 
+        position: "absolute", 
+     
+        width: "100%", 
+        height: "100%", 
+        zIndex: 0 
+      }}>
+        <Dither
+          waveColor={[0.5, 0.5, 0.5]}
+          disableAnimation={false}
+          enableMouseInteraction={true}
+          mouseRadius={0.3}
+          colorNum={4}
+          waveAmplitude={0.3}
+          waveFrequency={3}
+          waveSpeed={0.05}
+        />
+      </div>
+      
+      {/* Canvas con el logo encima */}
       <Canvas
         style={{
           height: "100vh",
@@ -24,18 +41,24 @@ export default function Logo3D() {
           position: "absolute",
           top: 0,
           left: 0,
-          zIndex: 0,
-          zoom: 1,
+          zIndex: 1,
+          background: "transparent"
         }}
-        camera={{ position: [0, 0, 5] }}
+        camera={{ position: [0, 0, 5], fov: 75 }}
       >
-        <ambientLight intensity={0.3} />
-        <directionalLight position={[10, 10, 10]} intensity={1.5} />
-        <Environment preset="city" />
-        <Background />
-        <LogoModel />
-        <OrbitControls enableZoom={false} />
+        <Suspense fallback={null}>
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[10, 10, 10]} intensity={1} />
+          <Environment preset="sunset" />
+          
+          <LogoModel />
+          <OrbitControls 
+            enableZoom={false} 
+            enablePan={false}
+            enableRotate={true}
+          />
+        </Suspense>
       </Canvas>
-    </>
+    </div>
   );
 }
