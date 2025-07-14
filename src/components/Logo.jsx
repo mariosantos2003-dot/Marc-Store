@@ -11,7 +11,7 @@ function LogoModel() {
 
 export default function Logo3D() {
   return (
-    <div style={{ position: "relative", width: "100%", height: "100&",backgroundColor: "#000" }}>
+    <div style={{ position: "relative", width: "100%", height: "100vh",backgroundColor: "#000" }}>
       <Header />
       {/* Dither como fondo */}
       <div style={{ 
