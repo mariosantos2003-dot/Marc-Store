@@ -3,6 +3,7 @@ import { products } from "../../utils/products";
 import "./Collection.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,24 +41,28 @@ function Collection() {
 
   return (
     <div className="collection-container">
+      <h1 className="collection-title"> Collection</h1>
+      <h2 className="collection-subtitle">Discover what we make</h2>
       <ul className="collection-list">
         {products.map((product) => (
           <li key={product.id} className="collection-item">
-            <div className="image-container">
-              <img
-                loading="lazy"
-                src={product.img}
-                alt={product.nombre}
-                className="collection-image primary"
-              />
-              <img
-                loading="lazy"
-                src={product.img2}
-                alt={`${product.nombre} hover`}
-                className="collection-image secondary"
-              />
-            </div>
-            <h2 className="collection-name">{product.nombre}</h2>
+            <Link to={`/collection/${product.id}`}>
+              <div className="image-container">
+                <img
+                  loading="lazy"
+                  src={product.img}
+                  alt={product.nombre}
+                  className="collection-image primary"
+                />
+                <img
+                  loading="lazy"
+                  src={product.img2}
+                  alt={`${product.nombre} hover`}
+                  className="collection-image secondary"
+                />
+              </div>
+              <h2 className="collection-name">{product.nombre}</h2>
+            </Link>
           </li>
         ))}
       </ul>
