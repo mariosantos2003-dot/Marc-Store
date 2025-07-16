@@ -9,9 +9,10 @@ gsap.registerPlugin(ScrollTrigger);
 function Collection() {
   useEffect(() => {
     const items = gsap.utils.toArray(".collection-item");
-  
+
     items.forEach((item) => {
-      gsap.fromTo(item, 
+      gsap.fromTo(
+        item,
         {
           opacity: 0,
           y: 50,
@@ -26,31 +27,38 @@ function Collection() {
             start: "top 90%",
             toggleActions: "play none none none",
             once: true,
-          }
+          },
         }
       );
     });
 
     // Limpiar ScrollTrigger al desmontar
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 
   return (
-  <div className="collection-container">
-    <ul className="collection-list">
-      {products.map((product) => (
-        <li key={product.id} className="collection-item">
-          <img
-            src={product.img}
-            alt={product.nombre}
-            className="collection-image"
-          />
-          <h2 className="collection-name">{product.nombre}</h2>
-        </li>
-      ))}
-    </ul>
+    <div className="collection-container">
+      <ul className="collection-list">
+        {products.map((product) => (
+          <li key={product.id} className="collection-item">
+  <div className="image-container">
+    <img
+      src={product.img}
+      alt={product.nombre}
+      className="collection-image primary"
+    />
+    <img
+      src={product.img2}
+      alt={`${product.nombre} hover`}
+      className="collection-image secondary"
+    />
+  </div>
+  <h2 className="collection-name">{product.nombre}</h2>
+</li>
+        ))}
+      </ul>
     </div>
   );
 }
