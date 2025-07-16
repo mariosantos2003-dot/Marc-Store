@@ -40,16 +40,20 @@
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-family: "gothic"; 
-  font-size: x-large;/* Usar la fuente personalizada */
+  font-family: "gothic";
+  font-size: x-large; /* Usar la fuente personalizada */
   margin-top: 40px;
   margin-bottom: 20px;
-  
+  text-decoration: none;
+  color: white;
 }
 
 .nav-link:hover {
   color: #cccccc;
+  text-decoration: none; /* Quitar subrayado en hover también */
 }
+
+
 
 .logo-section {
   flex-shrink: 0;
@@ -66,13 +70,11 @@
 @font-face {
   font-family: "gothic";
   src: url(../../assets/fonts/Gothic.otf);
-  
-  
 }
 
-@font-face{
-    font-family: 'plank';
-    src: url(../../assets/fonts/PLANK___.TTF);
+@font-face {
+  font-family: "plank";
+  src: url(../../assets/fonts/PLANK___.TTF);
 }
 
 @font-face {
