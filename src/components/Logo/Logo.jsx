@@ -1,8 +1,8 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF, Environment } from "@react-three/drei";
 import { Suspense } from "react";
-import Dither from "./Dither/Dither";
-import Header from "./Header/Header";
+import Dither from "../Dither/Dither";
+import Header from "../Header/Header";
 
 function LogoModel() {
   const { scene } = useGLTF("/assets/Final-Logo.glb");
@@ -12,7 +12,7 @@ function LogoModel() {
 export default function Logo3D() {
   return (
     <div style={{ position: "relative", width: "100%", height: "100vh",backgroundColor: "#000" }}>
-      <Header />
+      
       {/* Dither como fondo */}
       <div style={{ 
         position: "absolute", 
