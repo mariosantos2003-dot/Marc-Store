@@ -21,7 +21,7 @@ function ProductDetail() {
         >
           {showModel ? "Ocultar 3D" : "Ver en 3D"}
         </button>
-        {showModel && <ModelViewer modelPath="/assets/Hand-Final.glb" onClose={() => setShowModel(false)} />}
+        {showModel && <ModelViewer modelPath={product.model} onClose={() => setShowModel(false)} />}
       </div>
 
       <div className="product-info">

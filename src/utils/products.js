@@ -6,6 +6,7 @@ export const products = [
         "img2" : "/assets/anillo2.png",
         "precio": 1500,
         "descripcion": "Anillo en plata de ley con un hermoso cuarzo citrino, ideal para ocasiones especiales o uso diario. Hecho a mano con atención al detalle y calidad excepcional.",
+        "model": "/assets/Hand-Final.glb"
 
     },
     {
@@ -15,6 +16,7 @@ export const products = [
         "img2" : "/assets/anillo2.png",
         "precio": 1500,
         "descripcion": "Anillo en plata de ley con un hermoso cuarzo citrino, ideal para ocasiones especiales o uso diario. Hecho a mano con atención al detalle y calidad excepcional.",
+        "model": "/assets/Hand-Final.glb"
 
     },
     {
@@ -24,6 +26,7 @@ export const products = [
         "img2" : "/assets/anillo2.png",
         "precio": 1500,
         "descripcion": "Anillo en plata de ley con un hermoso cuarzo citrino, ideal para ocasiones especiales o uso diario. Hecho a mano con atención al detalle y calidad excepcional.",
+        "model": "/assets/Hand-Final.glb"
     },
     {
         "id": 4,
@@ -32,6 +35,7 @@ export const products = [
         "img2" : "/assets/anillo2.png",
         "precio": 1500,
         "descripcion": "Anillo en plata de ley con un hermoso cuarzo citrino, ideal para ocasiones especiales o uso diario. Hecho a mano con atención al detalle y calidad excepcional.",
+        "model": "/assets/Hand-Final.glb"
     },
     {
         "id": 5,
@@ -40,6 +44,7 @@ export const products = [
         "img2" : "/assets/anillo2.png",
         "precio": 1500,
         "descripcion": "Anillo en plata de ley con un hermoso cuarzo citrino, ideal para ocasiones especiales o uso diario. Hecho a mano con atención al detalle y calidad excepcional.",
+        "model": "/assets/Hand-Final.glb"
     },
     {
         "id": 6,
@@ -48,6 +53,7 @@ export const products = [
         "img2" : "/assets/anillo2.png",
         "precio": 1500,
         "descripcion": "Anillo en plata de ley con un hermoso cuarzo citrino, ideal para ocasiones especiales o uso diario. Hecho a mano con atención al detalle y calidad excepcional.",
+        "model": "/assets/Hand-Final.glb"
     },
     {
         "id": 7,
@@ -56,6 +62,7 @@ export const products = [
         "img2" : "/assets/anillo2.png",
         "precio": 1500,
         "descripcion": "Anillo en plata de ley con un hermoso cuarzo citrino, ideal para ocasiones especiales o uso diario. Hecho a mano con atención al detalle y calidad excepcional.",
+        "model": "/assets/Hand-Final.glb"
     },
     {
         "id": 8,
@@ -64,6 +71,7 @@ export const products = [
         "img2" : "/assets/anillo2.png",
         "precio": 1500,
         "descripcion": "Anillo en plata de ley con un hermoso cuarzo citrino, ideal para ocasiones especiales o uso diario. Hecho a mano con atención al detalle y calidad excepcional.",
+        "model": "/assets/Hand-Final.glb"
     },
     {
         "id": 9,
@@ -72,6 +80,7 @@ export const products = [
         "img2" : "/assets/anillo2.png",
         "precio": 1500,
         "descripcion": "Anillo en plata de ley con un hermoso cuarzo citrino, ideal para ocasiones especiales o uso diario. Hecho a mano con atención al detalle y calidad excepcional.",
+        "model": "/assets/Hand-Final.glb"
     },
     {
         "id": 10,
@@ -80,5 +89,6 @@ export const products = [
         "img2" : "/assets/anillo2.png",
         "precio": 1500,
         "descripcion": "Anillo en plata de ley con un hermoso cuarzo citrino, ideal para ocasiones especiales o uso diario. Hecho a mano con atención al detalle y calidad excepcional.",
+        "model": "/assets/Hand-Final.glb"
     }
 ]
