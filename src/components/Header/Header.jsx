@@ -11,7 +11,7 @@ function Header() {
             </div>
             
             <div className='logo-section'>
-                <img src='/assets/rotating-logo.gif' alt='Rotating Logo' className='logo' />
+                <img src='/assets/rotating2.webp' alt='Rotating Logo' className='logo' />
             </div>
             
             <div className='nav-section'>
