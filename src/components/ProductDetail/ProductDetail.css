@@ -4,11 +4,13 @@
     gap: 2rem;
     padding: 5%;
     min-height: 100vh;
+    margin-top: 100px; /* Espacio para el header sticky */
 }
 
 .product-image-container {
     flex: 1;
     max-width: 50%;
+    
 }
 
 .product-image-container img {
@@ -26,7 +28,7 @@
 .product-title {
     color: white;
     font-size: 1.4rem;
-    margin-top: 0;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 .view-button{
