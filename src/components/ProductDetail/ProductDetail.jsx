@@ -1,7 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 import { products } from "../../utils/products";
-import "./ProductDetail.css"; // Asegúrate de tener este archivo CSS
+import "./ProductDetail.css"; 
+import gsap from "gsap";// Asegúrate de tener este archivo CSS
 
 function ProductDetail() {
   const { id } = useParams();
@@ -10,7 +12,15 @@ function ProductDetail() {
   if (!product) {
     return <div>Product not found</div>;
   }
-
+  useEffect(() => {
+    gsap.from(".product-detail", {
+      opacity: 1,
+      y: 50,
+      duration: 1,
+      ease: "power2.out",
+    });
+  }, []);
+  
   return (
     <div className="product-detail">
       <div className="product-image-container">
