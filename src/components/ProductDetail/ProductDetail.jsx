@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../../utils/products";
+import "./ProductDetail.css"; // Asegúrate de tener este archivo CSS
 
 function ProductDetail() {
   const { id } = useParams();
@@ -12,9 +13,17 @@ function ProductDetail() {
 
   return (
     <div className="product-detail">
-      <h1 className="product-name">{product.nombre}</h1>
-      <img src={product.img} alt={product.nombre} />
-      <p className="product-description">Descripción o más imágenes aquí...</p>
+      <div className="product-image-container">
+        <img src={product.img} alt={product.nombre} />
+        <button className="view-button"> Ver en 3d </button>
+      </div>
+
+      <div className="product-info">
+        <h1 className="product-title">{product.nombre}</h1>
+
+        <p className="product-description">{product.descripcion}</p>
+        <p className="product-price">${product.precio}</p>
+      </div>
     </div>
   );
 }
