@@ -1,8 +1,8 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF, Environment } from "@react-three/drei";
 import { Suspense } from "react";
-import Dither from "../Dither/Dither";
-import Header from "../Header/Header";
+import Dither from "../React-Bits/Dither/Dither";
+
 
 function LogoModel() {
   const { scene } = useGLTF("/assets/Final-Logo.glb");

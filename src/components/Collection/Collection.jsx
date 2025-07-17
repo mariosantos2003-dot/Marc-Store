@@ -4,10 +4,14 @@ import "./Collection.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
+import BlurText from "../React-Bits/Blur-Text/Blur-Text";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Collection() {
+  const handleAnimationComplete = () => {
+    console.log("Animation completed!");
+  };
   useEffect(() => {
     const items = gsap.utils.toArray(".collection-item");
 
@@ -41,8 +45,23 @@ function Collection() {
 
   return (
     <div className="collection-container">
-      <h1 className="collection-title"> Collection</h1>
-      <h2 className="collection-subtitle">Discover what we make</h2>
+      <BlurText
+        text="Collection"
+        delay={150}
+        animateBy="words"
+        direction="top"
+        onAnimationComplete={handleAnimationComplete}
+        className="collection-title"
+      />
+      <BlurText
+        text="Discover What We Make"
+        delay={150}
+        animateBy="words"
+        direction="top"
+        onAnimationComplete={handleAnimationComplete}
+        className="collection-subtitle"
+      />
+
       <ul className="collection-list">
         {products.map((product) => (
           <li key={product.id} className="collection-item">
@@ -61,7 +80,15 @@ function Collection() {
                   className="collection-image secondary"
                 />
               </div>
-              <h2 className="collection-name">{product.nombre}</h2>
+           
+              <BlurText
+                text={product.nombre}
+                delay={150}
+                animateBy="words"
+                direction="top"
+                onAnimationComplete={handleAnimationComplete}
+                className="collection-name"
+              />
             </Link>
           </li>
         ))}

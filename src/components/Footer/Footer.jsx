@@ -18,7 +18,7 @@ function Footer() {
             <h3 className="footer-section-title">Follow Us</h3>
             <div className="footer-social">
               <a
-                href="https://www.instagram.com/panicoweb/"
+                href="https://www.instagram.com/panico.jwl/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-link"

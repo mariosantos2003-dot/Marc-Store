@@ -21,6 +21,7 @@
     "@types/react": "19",
     "@types/react-dom": "19",
     "@types/three": "^0.178.0",
+    "framer-motion": "^12.23.6",
     "gsap": "^3.13.0",
     "postprocessing": "^6.37.6",
     "react": "19",
