@@ -81,3 +81,8 @@
   font-family: "yuruka";
   src: url(../../assets/fonts/fot-yuruka-std.ttf);
 }
+
+@font-face{
+  font-family:  "magneto";
+  src: url(../../assets/fonts/MAGNETOB.TTF);
+}

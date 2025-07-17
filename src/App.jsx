@@ -8,6 +8,7 @@ import PageWrapper from "./components/PageWrapper/PageWrapper";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
         <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
         <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
       </Routes>
+
+      <Footer />
 
     </Router>
   );
