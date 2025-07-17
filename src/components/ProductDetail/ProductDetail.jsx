@@ -27,7 +27,7 @@ function ProductDetail() {
       <div className="product-info">
         <h1 className="product-title">{product.nombre}</h1>
         <p className="product-description">{product.descripcion}</p>
-        <p className="product-price">${product.precio}</p>
+       
       </div>
     </div>
   );

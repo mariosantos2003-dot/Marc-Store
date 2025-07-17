@@ -83,7 +83,7 @@ function Collection() {
            
               <BlurText
                 text={product.nombre}
-                delay={150}
+                delay={100}
                 animateBy="words"
                 direction="top"
                 onAnimationComplete={handleAnimationComplete}
