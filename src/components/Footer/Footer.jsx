@@ -9,13 +9,13 @@ function Footer() {
         <div className="footer-top">
           <h1 className="footer-title">Panico Jwl</h1>
           <p className="footer-description">
-            Jewelry crafted with passion and precision
+            
           </p>
         </div>
 
         <div className="footer-middle">
           <div className="footer-section">
-            <h3 className="footer-section-title">Follow Us</h3>
+            <h3 className="footer-section-title">Siguenos</h3>
             <div className="footer-social">
               <a
                 href="https://www.instagram.com/panico.jwl/"
@@ -54,11 +54,11 @@ function Footer() {
           </div>
 
           <div className="footer-section">
-            <h3 className="footer-section-title">Quick Links</h3>
+            <h3 className="footer-section-title">Acceso Rapido</h3>
             <ul className="footer-links">
               <li>
                 <Link to="/about" className="footer-link">
-                  Sobre Nosotros
+                  Sobre Mi
                 </Link>
               </li>
               <li>

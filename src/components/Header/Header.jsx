@@ -7,12 +7,12 @@ function Header() {
     <div className='header'>
         <div className='header-content'>
             <div className='nav-section'>
-                <Link to="/" className='nav-link'>Home</Link>
+                <Link to="/" className='nav-link'>Inicio</Link>
                 <Link to="/collection" className='nav-link'>Colección</Link>
             </div>
             
             <div className='logo-section'>
-                <img src='/assets/rotating2.webp' alt='Rotating Logo' className='logo' />
+               <Link to='/'> <img src='/assets/rotating2.webp' alt='Rotating Logo' className='logo' /></Link>
             </div>
             
             <div className='nav-section'>
