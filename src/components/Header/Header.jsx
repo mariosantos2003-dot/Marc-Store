@@ -8,7 +8,7 @@ function Header() {
         <div className='header-content'>
             <div className='nav-section'>
                 <Link to="/" className='nav-link'>Home</Link>
-                <Link to="/collection" className='nav-link'>Collection</Link>
+                <Link to="/collection" className='nav-link'>Colección</Link>
             </div>
             
             <div className='logo-section'>
@@ -16,8 +16,8 @@ function Header() {
             </div>
             
             <div className='nav-section'>
-                <Link to='/contact' className='nav-link'>Contact</Link>
-                <Link to='/about' className='nav-link'>About</Link>
+                <Link to='/contact' className='nav-link'>Contacto</Link>
+                <Link to='/about' className='nav-link'>Sobre mi</Link>
             </div>
         </div>
     </div>

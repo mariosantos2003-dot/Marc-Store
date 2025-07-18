@@ -1,0 +1,35 @@
+.contact-section {
+  display: flex;
+}
+
+.contact-img {
+  width: 70%;
+  height: 90vh;
+}
+
+.contact-info {
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(22, 22, 22);
+  border-radius: 1rem;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 20px;
+  margin-right: 120px;
+  padding: 40px;
+}
+
+.contact-title {
+  font-family: "magneto";
+  text-align: center;
+}
+
+.contact-subtitle {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
