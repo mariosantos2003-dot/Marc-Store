@@ -1,5 +1,6 @@
 {
-  "installCommand": "bun install --no-cache",
+  "installCommand": "bun install",
   "buildCommand": "bun run build",
-  "framework": "vite"
+  "framework": "vite",
+  "outputDirectory": "dist"
 }
